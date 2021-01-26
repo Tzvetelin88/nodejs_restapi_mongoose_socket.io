@@ -3,7 +3,7 @@ Nodejs RestAPI Application with Express, MongoDB, Mongoose and WebSocket integra
 
 ## External npm:
 
- - Crate free account with MongoDB (https://account.mongodb.com/)
+ - Crеate free account with MongoDB Atlas (https://account.mongodb.com/)
  - User Mongoose as syntax sugar.
  - Create Routes, Models and Controllers.
  - Validate requests with epxress validator.
