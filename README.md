@@ -54,3 +54,40 @@ Nodejs RestAPI Application with Express, MongoDB, Mongoose and WebSocket integra
 
 
 Front-end Application with React to access Nodejs RestAPI will come soon too...
+
+
+# P.S.
+## Still you can use the new ECMA syntax to import/export, but be aware that many are still Experimental, depends of the version of Nodejs:
+ - v.15 https://nodejs.org/api/esm.html
+ - v.14 https://nodejs.org/docs/latest-v14.x/api/esm.html
+
+Some examples in our project:
+```
+// New syntac to import
+import path, { dirname } from 'path'
+import { fileURLToPath } from 'url'
+import express from 'express'
+import bodyParser from 'body-parser'
+import mongoose from 'mongoose'
+import multer from 'multer'
+
+import { default as feedRoutes } from './routes/feed.js'
+import { default as authRoutes } from './routes/auth.js'
+
+// Because of the new syntax of Ecma, the do not support __filename or __dirname as global variables
+// Read more: https://nodejs.org/docs/latest-v15.x/api/esm.html
+// !!!! Some features are still experimental  !!!!
+// We need to construct it in more long way....
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+// Old imports before type: module in package.json
+// const path = require('path');
+// const express = require('express');
+// const bodyParser = require('body-parser');
+// const mongoose = require('mongoose');
+// const multer = require('multer');
+
+// const feedRoutes = require('./routes/feed');
+// const authRoutes = require('./routes/auth');
+```
