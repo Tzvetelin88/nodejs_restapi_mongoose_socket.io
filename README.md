@@ -26,6 +26,7 @@ Nodejs RestAPI Application with Express, MongoDB, Mongoose and WebSocket integra
 ```
 
 ## API Endpoints:
+```
 /feed
 	router GET: 
 		'/posts'
@@ -49,3 +50,6 @@ Nodejs RestAPI Application with Express, MongoDB, Mongoose and WebSocket integra
 		'/status'
 	router PATH:
 		'/status'
+```
+
+
