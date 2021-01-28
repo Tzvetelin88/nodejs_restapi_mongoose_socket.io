@@ -88,6 +88,7 @@ Front-end Application with React to access Nodejs RestAPI will come soon too...
 
 
 # P.S.
+## In next release we will re-write all .then() promises with async/await for more readable and structured code!
 ## Still you can use the new ECMA syntax to import/export, but be aware that many are still Experimental, depends of the version of Nodejs:
  - v.15 https://nodejs.org/api/esm.html
  - v.14 https://nodejs.org/docs/latest-v14.x/api/esm.html
