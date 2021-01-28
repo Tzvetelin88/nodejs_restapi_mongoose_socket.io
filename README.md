@@ -1,5 +1,6 @@
-# nodejs_restapi_mongoose_socket.io
-Nodejs RestAPI Application with Express, MongoDB, Mongoose and WebSocket integration.
+# nodejs_views_restapi_mongoose_socket.io
+Nodejs RestAPI and Views Application with Express, MongoDB, Mongoose and WebSocket integration.
+Backend and Frontend achieved by Nodejs.
 
 ## Inside:
 
