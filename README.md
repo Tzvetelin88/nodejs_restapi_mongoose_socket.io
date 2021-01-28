@@ -20,6 +20,7 @@ Nodejs RestAPI Application with Express, MongoDB, Mongoose and WebSocket integra
  -  express-validator - https://express-validator.github.io/docs/   
  -  socket.io         - https://socket.io/docs/v3/index.html
  -  jsonwebtoken      - https://github.com/auth0/node-jsonwebtoken#readme
+ -  bcryptjs	      - https://github.com/dcodeIO/bcrypt.js	
  -  multer            - https://github.com/expressjs/multer#readme
  -  nodemailer 		  - https://nodemailer.com/about/
  -  bcryptjs		  - https://github.com/kelektiv/node.bcrypt.js#readme
