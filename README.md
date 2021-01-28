@@ -1,7 +1,7 @@
 # nodejs_restapi_mongoose_socket.io
 Nodejs RestAPI Application with Express, MongoDB, Mongoose and WebSocket integration.
 
-## External npm:
+## Inside:
 
  - Crеate free account with MongoDB Atlas (https://account.mongodb.com/)
  - User Mongoose as syntax sugar.
