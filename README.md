@@ -31,7 +31,7 @@ Nodejs RestAPI Application with Express, MongoDB, Mongoose and WebSocket integra
 	- chain 		  - http://chaijs.com/
 	- sinon 		  - https://sinonjs.org
 
-## Two Routes: 
+## Four Routes: 
 ``` 
    /admin
    /feed
