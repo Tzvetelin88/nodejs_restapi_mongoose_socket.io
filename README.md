@@ -7,7 +7,10 @@ Nodejs RestAPI Application with Express, MongoDB, Mongoose and WebSocket integra
  - User Mongoose as syntax sugar.
  - Create Routes, Models and Controllers.
  - Validate requests with epxress validator.
- - Add authentication and validate with JWT
+ - Add authentication and validate with JWT. Password reset, Tokens, Hash and more with Bcrypt, Crypto
+ - WebSocket connection and communication
+ - Sending emails with Nodemailer and transport to SendGrid. 
+   Register https://signup.sendgrid.com/
 
 ## Using: 
 
@@ -18,15 +21,52 @@ Nodejs RestAPI Application with Express, MongoDB, Mongoose and WebSocket integra
  -  socket.io         - https://socket.io/docs/v3/index.html
  -  jsonwebtoken      - https://github.com/auth0/node-jsonwebtoken#readme
  -  multer            - https://github.com/expressjs/multer#readme
+ -  nodemailer 		  - https://nodemailer.com/about/
+ -  bcryptjs		  - https://github.com/kelektiv/node.bcrypt.js#readme
+ -  crypto		      - https://nodejs.org/api/crypto.html
+ -  csrf		      - https://www.npmjs.org/package/csurf
+ 
+ - Testing 
+	- chain 		  - http://chaijs.com/
+	- sinon 		  - https://sinonjs.org
 
 ## Two Routes: 
 ``` 
+   /admin
    /feed
    /auth 
+   /shop 
 ```
 
 ## API Endpoints:
 ```
+/admin
+	router GET: 
+		'/add-product'
+		'/products'
+		'/edit-product/:productId'
+		
+	router POST: 
+		'/add-product'
+		'/edit-product'
+
+	router DELETE:
+		'/product/:productId'
+
+/auth
+	router GET:
+		'/login'
+		'/signup'
+		'/reset'
+		'/reset/:token'
+
+	router POST:
+		'/login'
+		'/signup'
+		'/logout'
+		'/reset'
+		'/new-password'
+
 /feed
 	router GET: 
 		'/posts'
@@ -40,16 +80,6 @@ Nodejs RestAPI Application with Express, MongoDB, Mongoose and WebSocket integra
 
 	router DELETE:
 		'/post/:postId'
-
-/auth
-	router PUT:
-		'/signup'
-	router POST:
-		'/login'
-	router GET:
-		'/status'
-	router PATH:
-		'/status'
 ```
 
 
