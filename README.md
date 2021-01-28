@@ -1,5 +1,5 @@
 # nodejs_views_restapi_mongoose_socket.io
-Backend and Frontend achieved by Nodejs.
+- Backend and Frontend achieved by Nodejs.
 Nodejs RestAPI and Views Application with Express, MongoDB, Mongoose and WebSocket integration.
 
 ## Inside:
